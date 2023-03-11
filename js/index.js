@@ -9,8 +9,12 @@ menu.onclick = () =>{
 
 window.onscroll = () =>{
   menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
+  // navbar.classList.remove('active');
 }
+
+// navbar.onclick = ()  =>{
+//   navbar.classList.toggle("active")
+// }
 
 // let navLinks = document.querySelectorAll('header .navbar a');
 
@@ -51,6 +55,7 @@ const SEARCH_NEWS = "https://newsapi.org/v2/everything?q=";
 window.onload = function() {
   newsType.innerHTML="<h4>Headlines</h4>";
   fetchHeadlines();
+
 };
 
 genralBtn.addEventListener("click",function(){
@@ -201,6 +206,7 @@ function displayNews() {
       card.className = "para";
 
       var image = document.createElement('img');
+      // image.className = "NewsImg"
       image.setAttribute("height","matchparent");
       image.setAttribute("width","100%");
       image.src=news.urlToImage;
@@ -224,6 +230,8 @@ function displayNews() {
       link.setAttribute("target", "_blank");
       link.href = news.url;
       link.innerHTML="Read more";
+
+      // var  imglink = 
 
       cardBody.appendChild(newsHeading);
       cardBody.appendChild(dateHeading);

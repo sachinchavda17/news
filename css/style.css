@@ -169,12 +169,16 @@ header .icons #menu-bars{
 }
 
 .ndetails{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0  ;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* margin-top: 0  ;
     margin-left: .5rem ;
-    margin-right: .5rem ;
+    margin-right: .5rem ; */
     /* width: 100% ; */
+    margin: 0 .5rem;
+    /* padding: 0.5rem; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr );
 }
 
 .para{
@@ -188,7 +192,6 @@ header .icons #menu-bars{
     left: 0;
     bottom: 0 ;
     /* margin: 1rem ; */
-
     width: 100%;
     background-color: #fff;
     color: var(--black);
@@ -224,18 +227,27 @@ header .icons #menu-bars{
     border-radius: 0.25rem ;
     padding: 0.5rem ;
     min-width: 0;
-    
+}
+.card:hover{
+    transform: scale(1);
+    background-color: rgb(242, 242, 242);
+    /* cursor: pointer; */
 }
 
-.card .para {
+
+.card.para {
 padding: 0.5rem ;
 }
 
-.card .para img{
+img{
 vertical-align: middle;
 width: 100% ;
-overflow-clip-margin: content-box ;
+/* overflow-clip-margin: content-box ; */
 overflow: clip;
+}
+
+img:hover{
+    cursor: pointer;
 }
 
 h5{
@@ -245,7 +257,8 @@ h5{
 }
 
 .card-title{
-    margin-bottom: .5rem ;
+    /* margin-bottom: .5rem ; */
+    margin: .25rem 0 ;
     font-size: 1.5rem ;
     
 }
@@ -254,13 +267,11 @@ h5{
     padding: 1rem 0 ;
     font-size: 1.5rem ;
     color: rgb( 13,110,253);
-    margin-top: 0;
-    margin-bottom: .5rem ;
-    line-height: 1.2;
+    /* margin-top: 0;
+    margin-bottom: .5rem ; */
+    margin: 0.25rem 0 ;
+    /* line-height: 1.2; */
 }
-/* .descript{
-
-} */
 
 #sign-in{
     position: absolute;
@@ -269,7 +280,13 @@ h5{
     display: none;
 }
 
-
+.descript{
+    padding: 1rem 0 ;
+    font-size: 1.5rem ;
+    /* color: rgb( 13,110,253); */
+    margin: 0.25rem 0 ;
+    line-height: 1.2;
+}
 
 
 
